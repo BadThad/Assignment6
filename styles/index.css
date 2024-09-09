@@ -1,27 +1,57 @@
 /* --- These are all the font styles. */
 
-.o-infotext{
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-}
-
-.o-header__bold{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.o-cardheader__semibold {
+  }
+  
+  .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* -- These are the tailored font sizes -- */
+
+.o-header__smallbold {
+    font-size: 16px;
 }
 
-.o-cardtext__medium{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+.o-header__largebold {
+    font-size: 36px;
+}
+
+.o-header__extralargebold {
+    font-size: 44px;
+}
+
+.o-header__text {
+    font-size: 18px;
+}
+
+.cardtext-header {
+    font-size: 22px;
 }
 
 /* --- Here end the font styles */
+
+.orange-btn-style {
+
+}
+
+.orange-btn-style-capitalized {
+    text-transform: uppercase;
+}
