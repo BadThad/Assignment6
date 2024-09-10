@@ -80,8 +80,7 @@
 }
 
 #watchthevideo {
-    background-color: transparent;
-    color: #FF9900;
+        color: #FF9900;
 }
 
 /* --- Overall body style --- */
@@ -123,7 +122,7 @@ a {
     display: flex;
 }
 
-.o-nav-btns {
+.o-nav__btns {
     display: flex;
     gap: 30px;
     padding-right: 145px;
@@ -147,6 +146,7 @@ a {
 
 .o-watchthevideo__btn {
     margin-left: 30px;
+    background-color: transparent;
 }
 
 /* --- Features container and card styles ---*/
