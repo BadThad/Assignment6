@@ -50,7 +50,7 @@
     font-size: 14px;
 }
 
-/* --- These are the button styles. --- */
+/* --- These are the overarching button styles. --- */
 
 .orange-btn-style {
     background-color: #FF9900;
@@ -79,9 +79,16 @@
     padding-right: 25px;
 }
 
+#watchthevideo {
+    background-color: transparent;
+    color: #FF9900;
+}
+
 /* --- Overall body style --- */
 
 body {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,14 +107,26 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
-#navbar-logo {
+.o-navbar__logo {
     margin-left: 144px;
 }
 
 .o-navbar__info {
     display: flex;
+    gap: 20px;
+}
+
+.navbar-link {
+    display: flex;
+}
+
+.o-nav-btns {
+    display: flex;
+    gap: 30px;
+    padding-right: 145px;
 }
 
 /* --- Header container styles --- */
@@ -117,6 +136,17 @@ a {
     margin-left: 144px;
     margin-top: 30px;
     display: flex;
+}
+
+.o-header__buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.o-watchthevideo__btn {
+    margin-left: 30px;
 }
 
 /* --- Features container and card styles ---*/
@@ -140,6 +170,7 @@ a {
 .o-features__cardseries {
     margin-top: 54px;
     display: flex;
+    gap: 45px;
 }
 
 .o-features__card {
@@ -162,6 +193,11 @@ a {
 
 /* --- Info container 1 styles ---*/
 
+.o-infocontainer1__text {
+    width: 486px;
+    margin-right: 100px;
+}
+
 /* --- Info container 2 styles --- */
 
 .container2-text {
@@ -174,11 +210,20 @@ a {
     align-items: center;
 }
 
+.o-infocontainer2__checkboxtext {
+    margin-left: 30px;
+}
+
 .o-infocontainer2__text {
-    margin-left: 30px
+    margin-left: 100px
 }
 
 /* --- Info container 3 styles ---*/
+
+.o-infocontainer3__text {
+    width: 486px;
+    margin-right: 82px;
+}
 
 /* --- Footer styles --- */
 
