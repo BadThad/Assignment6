@@ -24,7 +24,7 @@
     font-style: normal;
   }
 
-/* -- These are the tailored font sizes -- */
+/* -- These are the overarching font sizes -- */
 
 .o-header__smallbold {
     font-size: 16px;
@@ -46,12 +46,166 @@
     font-size: 22px;
 }
 
-/* --- Here end the font styles */
+.poppins-regular-14 {
+    font-size: 14px;
+}
+
+/* --- These are the button styles. --- */
 
 .orange-btn-style {
-
+    background-color: #FF9900;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 25px;
 }
 
 .orange-btn-style-capitalized {
     text-transform: uppercase;
+}
+
+.nav-signin-btn {
+    background-color: transparent;
+    color: #173A56;
+    border: 1px solid;
+    border-color: #BCD0E5;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 25px;
+}
+
+/* --- Overall body style --- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- Navigation bar styles --- */
+
+.o-navbar {
+    height: 78px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-logo {
+    margin-left: 144px;
+}
+
+.o-navbar__info {
+    display: flex;
+}
+
+/* --- Header container styles --- */
+
+.o-header {
+    width: 80%;
+    margin-left: 144px;
+    margin-top: 30px;
+    display: flex;
+}
+
+/* --- Features container and card styles ---*/
+
+.o-features {
+    width: 80%;
+    margin-left: 144px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.o-features__header {
+    text-align: center;
+    height: 108px;
+    width: 539px;
+}
+
+.o-features__cardseries {
+    margin-top: 54px;
+    display: flex;
+}
+
+.o-features__card {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.o-features__btn {
+    margin-top: 34px;
+}
+
+/* --- General info container styles --- */
+
+.o-info__container {
+    width: 80%;
+    margin-left: 144px;
+    margin-top: 100px;
+    display: flex;
+}
+
+/* --- Info container 1 styles ---*/
+
+/* --- Info container 2 styles --- */
+
+.container2-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-and-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.o-infocontainer2__text {
+    margin-left: 30px
+}
+
+/* --- Info container 3 styles ---*/
+
+/* --- Footer styles --- */
+
+.o-footer {
+    width: 80%;
+    margin-top: 146px;
+    margin-left: 160px;
+    margin-bottom: 83px;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid;
+    border-color: #979797;
+}
+
+#o-footer__logo {
+    margin-top: 102px;
+    margin-left: 13px;
+    margin-bottom: 173px;
+}
+
+.o-footer__list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    line-height: 35px;
+}
+
+#footer__signup-btn {
+    align-self: flex-end;
 }

@@ -10,21 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <nav class="o-navbar">
+    <div class="o-navbar">
         <div class="o-navbar__logo">
-            <img class="o-logo" src="images/productly-logo.png" alt="productly-logo">
+            <img id="navbar-logo" src="images/productly-logo.png" alt="productly-logo">
         </div>
         <div class="o-navbar__info">
-            <a id="product" class="poppins-regular" href="">Product</a>
-            <a id="customer" class="poppins-regular" href="">Customer</a>
-            <a id="pricing" class="poppins-regular" href="">Pricing</a>
-            <a id="resources" class="poppins-regular" href="">Resources</a>
+            <ul>
+                <a id="product" class="poppins-regular-14" href="">Product</a>
+            </ul>
+            <ul>
+                <a id="customer" class="poppins-regular-14" href="">Customer</a>
+            </ul>
+            <ul>
+                <a id="pricing" class="poppins-regular-14" href="">Pricing</a>
+            </ul>
+            <ul>
+                <a id="resources" class="poppins-regular-14" href="">Resources</a>
+            </ul>
         </div>
         <div>
-            <a id="signin-nav poppins-semibold" href="">Sign In</a>
+            <a class="nav-signin-btn poppins-semibold" href="">Sign In</a>
+        </div>
+        <div>
             <a class="orange-btn-style poppins-bold" href="">Sign Up</a>
         </div>
-    </nav>
+    </div>
     <header class="o-header">
         <div class="o-header__text">
             <div class="o-header__textblock">
@@ -44,11 +54,11 @@
     </header>
     <div class="o-features">
         <div class="o-features__header">
-            <h2 class="poppins-bold">We design tools to unveil your superpowers</h2>
+            <h2 class="poppins-bold o-header__largebold">We design tools to unveil your superpowers</h2>
         </div>
-        <div class="o-features_cardseries">
+        <div class="o-features__cardseries">
             <div class="o-features__card">
-                <div class="o-features__cardtext card1">
+                <div class="o-features__cardtext" id="card1">
                     <h2 class="cardtext-header poppins-semibold">First click tests</h2>
                     <p class="poppins-medium">While most people enjoy casino gambling,</p>
                 </div>
@@ -57,7 +67,7 @@
                 </div>
             </div>
             <div class="o-features__card">
-                <div class="o-features__cardtext card2">
+                <div class="o-features__cardtext" id="card2">
                     <h2 class="cardtext-header poppins-semibold">Design surveys</h2>
                     <p class="poppins-medium">Sports betting, lottery and bingo playing for the fun</p>
                 </div>
@@ -66,7 +76,7 @@
                 </div>
             </div>
             <div class="o-features__card">
-                <div class="o-features__cardtext card3">
+                <div class="o-features__cardtext" id="card3">
                     <h2 class="cardtext-header poppins-semibold">Preference tests</h2>
                     <p class="poppins-medium">The Myspace page defines the individual.</p>
                 </div>
@@ -75,7 +85,7 @@
                 </div>
             </div>
             <div class="o-features__card">
-                <div class="o-features__cardtext card4">
+                <div class="o-features__cardtext" id="card4">
                     <h2 class="poppins-semibold">Five second tests</h2>
                     <p class="poppins-medium">Personal choices and the overall personality of the person. </p>
                 </div>
@@ -85,7 +95,7 @@
             </div>
         </div>
         <div class="o-features__btn">
-            <a class="orange-btn-style-capitalized poppins-bold" href="">sign up now</a>
+            <a class="orange-btn-style-capitalized orange-btn-style poppins-bold" href="">sign up now</a>
         </div>
     </div>
     <div class="o-info__container infocontainer1">
@@ -112,35 +122,37 @@
         <div class="o-infocontainer__img container2-img">
             <img src="images/infocontainer2-img.png" alt="infocontainer2-img">
         </div>
-        <div class="o-infocontainer__text">
-            <p class="poppins-medium">Easier decision making for</p>
-            <h2 class="poppins-bold o-infotext__largebold">Product Managers</h2>
-            <p class="poppins-medium">The Myspace page defines the individual, his or her characteristics, 
-                traits, personal choices and the overall personality of the person.</p>
-        </div>
-        <div class="o-infocontainer__text-and-checkboxes">
-            <div id="text-and-checkbox-top">
-                <div class="o-infocontainer2__checkbox">
-                    <img src="images/orange-checkbox.png" alt="orange-checkbox">
-                </div>
-                <div class="o-infocontainer2__text">
-                    <p class="poppins-medium">Never worry about overpaying for your energy again. </p>
-                </div>
+        <div class="o-infocontainer__text container2-text">
+            <div class="o-infocontainer__textbox">
+                <p class="poppins-medium">Easier decision making for</p>
+                <h2 class="poppins-bold o-infotext__largebold">Product Managers</h2>
+                <p class="poppins-medium">The Myspace page defines the individual, his or her characteristics, 
+                    traits, personal choices and the overall personality of the person.</p>
             </div>
-            <div id="text-and-checkbox-middle">
-                <div class="o-infocontainer2__checkbox">
-                    <img src="images/orange-checkbox.png" alt="orange-checkbox">
+            <div class="o-infocontainer__text-and-checkboxes">
+                <div class="text-and-checkbox">
+                    <div class="o-infocontainer2__checkbox">
+                        <img src="images/orange-checkbox.png" alt="orange-checkbox">
+                    </div>
+                    <div class="o-infocontainer2__text">
+                        <p class="poppins-medium">Never worry about overpaying for your energy again. </p>
+                    </div>
                 </div>
-                <div class="o-infocontainer2__text">
-                    <p class="poppins-medium">We will only switch you to energy companies that we trust and will treat you right</p>
+                <div class="text-and-checkbox">
+                    <div class="o-infocontainer2__checkbox">
+                        <img src="images/orange-checkbox.png" alt="orange-checkbox">
+                    </div>
+                    <div class="o-infocontainer2__text">
+                        <p class="poppins-medium">We will only switch you to energy companies that we trust and will treat you right</p>
+                    </div>
                 </div>
-            </div>
-            <div id="text-and-checkbox-bottom">
-                <div class="o-infocontainer2__checkbox">
-                    <img src="images/orange-checkbox.png" alt="orange-checkbox">
-                </div>
-                <div class= "o-infocontainer2__text">
-                    <p class="poppins-medium">We track the markets daily and know where the savings are.</p>
+                <div class="text-and-checkbox">
+                    <div class="o-infocontainer2__checkbox">
+                        <img src="images/orange-checkbox.png" alt="orange-checkbox">
+                    </div>
+                    <div class= "o-infocontainer2__text">
+                        <p class="poppins-medium">We track the markets daily and know where the savings are.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,22 +178,22 @@
         </div>
     </div>
     <footer class="o-footer">
-        <div class="o-footer__logo">
+        <div id="o-footer__logo">
             <img class="o-logo" src="images/productly-logo.png" alt="productly-logo">
         </div>
-        <div class="o-footer__aboutuslist">
+        <div class="o-footer__list" id="footer-aboutus">
             <a class="poppins-regular" href="">About Us</a>
             <a class="poppins-regular" href="">Blog</a>
             <a class="poppins-regular" href="">Contact</a>
             <a class="poppins-regular" href="">FAQ</a>
         </div>
-        <div class="o-footer__legal">
+        <div class="o-footer__list" id="footer-legal">
             <a class="poppins-regular" href="">Disclaimer</a>
             <a class="poppins-regular" href="">Financing</a>
             <a class="poppins-regular" href="">Privacy Policy</a>
             <a class="poppins-regular" href="">Terms of Service</a>
         </div>
-        <div class="o-footer__signupbtn orange-btn-style">
+        <div id="footer__signup-btn">
             <a class="orange-btn-style poppins-bold" href="">Sign up Now</a>
         </div>
     </footer>
